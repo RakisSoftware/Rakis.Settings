@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Bert Laverman</Authors>
+    <Company>Rakis Software</Company>
+    <Version>0.10.0</Version>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <Title>Rakis.Settings - manage application settings</Title>
+    <Description>A simple library to manage application settings.</Description>
+    <Copyright>Copyright (c) 2021-2022 Bert Laverman</Copyright>
+    <PackageProjectUrl>https://github.com/RakisSoftware/Rakis.Settings</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/RakisSoftware/Rakis.Settings</RepositoryUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Win32.Registry" Version="5.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Rakis.Logging" Version="0.10.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

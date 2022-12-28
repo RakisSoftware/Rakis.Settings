@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rakis.Settings", "Rakis.Settings\Rakis.Settings.csproj", "{1452505A-7807-421C-87C5-AD2058A3BC09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rakis.Settings.UnitTests", "Rakis.Settings.UnitTests\Rakis.Settings.UnitTests.csproj", "{BED6CF7C-B46D-4F31-8D07-FF68636FDC94}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1452505A-7807-421C-87C5-AD2058A3BC09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1452505A-7807-421C-87C5-AD2058A3BC09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1452505A-7807-421C-87C5-AD2058A3BC09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1452505A-7807-421C-87C5-AD2058A3BC09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BED6CF7C-B46D-4F31-8D07-FF68636FDC94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BED6CF7C-B46D-4F31-8D07-FF68636FDC94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BED6CF7C-B46D-4F31-8D07-FF68636FDC94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BED6CF7C-B46D-4F31-8D07-FF68636FDC94}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
