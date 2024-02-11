@@ -29,7 +29,8 @@ namespace Rakis.Settings
         AppDataRoaming,
         UserHome,
         UserDocuments,
-        CurrentWorkingDirectory
+        CurrentWorkingDirectory,
+        AbsolutePath
     }
 
 }

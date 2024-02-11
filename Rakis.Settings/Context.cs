@@ -22,10 +22,21 @@ namespace Rakis.Settings
         public string Group { get; set; }
         public string Application { get; set; }
 
+        private Context()
+        {
+            Group = null;
+            Application = null;
+        }
+
         public Context(string group, string application)
         {
             Group = group;
             Application = application;
         }
+
+        public bool IsEmpty => (Group == null) && (Application == null);
+
+        public static Context None => new();
+
     }
 }

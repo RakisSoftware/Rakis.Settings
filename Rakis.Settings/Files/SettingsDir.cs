@@ -18,6 +18,7 @@ using System;
 using System.IO;
 using static System.Environment;
 using Rakis.Logging;
+using System.Windows.Markup;
 
 namespace Rakis.Settings
 {
@@ -38,8 +39,16 @@ namespace Rakis.Settings
             Context = context;
             Type = type;
             Hidden = hidden;
-            UseGroup = useGroup;
-            UseApplication = useApplication;
+            if (context.IsEmpty)
+            {
+                UseGroup = false;
+                UseApplication = false;
+            }
+            else
+            {
+                UseGroup = useGroup;
+                UseApplication = useApplication;
+            }
         }
 
         private static string UserHome => GetEnvironmentVariable("HOMEDRIVE") + GetEnvironmentVariable("HOMEPATH");
@@ -82,6 +91,9 @@ namespace Rakis.Settings
                     break;
                 case SettingsType.CurrentWorkingDirectory:
                     result = Combine(".", filename);
+                    break;
+                case SettingsType.AbsolutePath:
+                    result = filename;
                     break;
                 default:
                     throw new NotImplementedException();

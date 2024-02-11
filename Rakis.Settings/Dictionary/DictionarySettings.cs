@@ -129,5 +129,6 @@ namespace Rakis.Settings.Dictionary
         }
         public override ISettings AsSettings => this;
         public override bool IsNull => false;
+        public int Count => Dict.Count;
     }
 }
